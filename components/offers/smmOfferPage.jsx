@@ -1,7 +1,6 @@
 import { ComparisonCardComponent } from "../comparisonCardComponent";
 import { ComparisonFeatures } from "../comparisonFeatures";
-import { CheckIcon } from "../icons/checkIcon";
-import { CrossIcon } from "../icons/crossIcon";
+
 import { tariffLight, tariffAdvanced } from "../consts/comparisonFeatures";
 
 export function SmmOfferPage() {

@@ -1,8 +1,8 @@
 import photo from "./icons/IMG_2354.webp";
 import Image from "next/image";
-import { TextHighlighter } from "./icons/textHiglighter";
+
 import { LearnMoreButton } from "./buttons/learnMoreButton";
-import { OrderButton } from "./buttons/orderButton";
+
 
 export function AboutPage() {
   return (

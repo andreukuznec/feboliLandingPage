@@ -1,6 +1,5 @@
 import React from "react";
-import Layout from "./layout/layout";
-import { GradientLine } from "./icons/gradientLine";
+
 import { OrderButton } from "./buttons/orderButton";
 import { LearnMoreButton } from "./buttons/learnMoreButton";
 

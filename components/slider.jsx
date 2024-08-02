@@ -27,4 +27,4 @@ export function Slider (){
 			</div>
 		</div>
 	);
-};
+}

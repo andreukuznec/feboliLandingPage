@@ -2,8 +2,7 @@ import { QuestionMarkIcon } from "./icons/questionMarkIcon";
 import { marketingAnalysis, realisation } from "./consts/comparisonFeatures";
 import { backgroundChange } from "./functions/backgroundChange";
 import { useState } from "react";
-const tariffBasic = [];
-const tariffAdvanced = [];
+
 
 export function ComparisonFeatures() {
   const [isHovered, setIsHovered] = useState(null);

@@ -1,4 +1,3 @@
-import { ArrowRight } from "./icons/arrowRight";
 import { OpenArrow } from "./icons/openArrow";
 
 export function LearnMorePage() {
