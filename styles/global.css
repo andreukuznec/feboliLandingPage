@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
