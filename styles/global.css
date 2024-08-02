@@ -3,7 +3,29 @@
 @tailwind utilities;
 
 .highlight-svg {
-  display: block;
-  width: 100%;
-  height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
 }
+
+input[type="range"]::-webkit-slider-thumb {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border-color: #5C6BC0;
+	background: lightgray;
+	cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border-color: #5C6BC0;
+	background: lightgray;
+	
+	cursor: pointer;
+}
+
