@@ -1,48 +1,49 @@
-import { ConsultationIcon } from "./icons/offersIcons/consultationIcon";
-import { ContentCreationIcon } from "./icons/offersIcons/contentCreationIcon";
-import { CreateProfileIcon } from "./icons/offersIcons/createProfileIcon";
-import { MentorIcon } from "./icons/offersIcons/mentorIcon";
-import { ReelsIcon } from "./icons/offersIcons/reelsIcon";
-import { SmmIcon } from "./icons/offersIcons/smmIcon";
+import { ConsultationIcon } from './icons/offersIcons/consultationIcon';
+import { ContentCreationIcon } from './icons/offersIcons/contentCreationIcon';
+import { CreateProfileIcon } from './icons/offersIcons/createProfileIcon';
+import { MentorIcon } from './icons/offersIcons/mentorIcon';
+import { ReelsIcon } from './icons/offersIcons/reelsIcon';
+import { SmmIcon } from './icons/offersIcons/smmIcon';
 
 const offers = [
   {
-    title: "SMM-ведение",
-    href: "/offers/smm",
-    description: "SMM - комплексное продвижение",
+    title: 'SMM-ведение',
+    href: '/offers/smm',
+    description: 'SMM - комплексное продвижение',
     sticker: <SmmIcon />,
   },
   {
-    title: "Съемка и монтаж рилс",
-    href: "/offers/reels",
-    description: "Съёмка и монтаж инстаграм рилс в Праге",
+    title: 'Съемка и монтаж рилс',
+    href: '/offers/reels',
+    description: 'Съёмка и монтаж инстаграм рилс в Праге',
     sticker: <ReelsIcon />,
   },
   {
-    title: "Контент-съемка",
-    href: "/offers/content",
-    description: "Съёмка контента для ваших социальных сетей в Праге",
+    title: 'Контент-съемка',
+    href: '/offers/content',
+    description: 'Съёмка контента для ваших социальных сетей в Праге',
     sticker: <ContentCreationIcon />,
   },
   {
-    title: "Упаковка инстаграм профиля ",
-    href: "/offers/profile",
-    description: "Комплексная упаковка инстаграм профиля под ключ",
+    title: 'Упаковка инстаграм профиля ',
+    href: '/offers/profilePacking',
+    description: 'Комплексная упаковка инстаграм профиля под ключ',
     sticker: <CreateProfileIcon />,
   },
   {
-    title: "Консультация по инстаграму",
-    href: "/offers/consultation",
-    description: "Консультация по инстаграму (онлайн/оффлайн в Праге) ",
+    title: 'Консультация по инстаграму',
+    href: '/offers/consultation',
+    description: 'Консультация по инстаграму (онлайн/оффлайн в Праге) ',
     sticker: <ConsultationIcon />,
   },
   {
-    title: "Менторство по инстаграму",
-    href: "/offers/mentoring",
-    description: "Менторство по инстаграму (индивидуальное обучение) ",
+    title: 'Менторство по инстаграму',
+    href: '/offers/mentoring',
+    description: 'Менторство по инстаграму (индивидуальное обучение) ',
     sticker: <MentorIcon />,
   },
 ];
+
 export function OffersPage() {
   return (
     <section>
@@ -61,7 +62,7 @@ export function OffersPage() {
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {
             /* CARD */
-            offers.map((offer) => (
+            offers.map(offer => (
               <a
                 key={offer.title}
                 className="hover:-translate-y-2 rounded-xl border text-gray-800 w-auto h-auto shadow-xl transition hover:border-indigo-600/50 hover:shadow-indigo-600/10 hover:text-gray-950 bg-white/50"

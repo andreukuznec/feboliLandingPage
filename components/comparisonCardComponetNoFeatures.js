@@ -1,11 +1,13 @@
 import { LearnMoreButton } from './buttons/learnMoreButton';
 import { OrderButton } from './buttons/orderButton';
-import { realisation } from './consts/comparisonFeatures';
 import { backgroundChange } from './functions/backgroundChange';
-import { CheckIcon } from './icons/checkIcon';
-import { CrossIcon } from './icons/crossIcon';
 
-export function ComparisonCardComponent({ title, price, description, tariff }) {
+export function ComparisonCardComponentNoFeatures({
+  title,
+  price,
+  description,
+  tariff,
+}) {
   let bg = false;
   return (
     <div className=" border-2 border-indigo-700/30 md:border-none rounded-lg max-w-80 mb-10 lg:mb-0 items-center m-5">
@@ -15,20 +17,21 @@ export function ComparisonCardComponent({ title, price, description, tariff }) {
         <span className="text-sm text-gray-600">{description}</span>
       </div>
 
-      {realisation.map((el, ind) => (
-        <p
-          key={ind + 3}
-          className={
-            backgroundChange((bg = !bg), 'md:bg-gray-100') +
-            ' mx-3 border-b-2 border-slate-200/50 justify-between text-gray-900 h-12 flex items-center md:border-none md:text-center  md:justify-center'
-          }
-        >
-          <span className="md:hidden">{el.replace('?', '')}</span>
-          <span className="w-5 h-5 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
-            {tariff[ind] ? <CheckIcon /> : <CrossIcon />}
-          </span>
-        </p>
-      ))}
+      {tariff.map((el, ind) =>
+        el ? (
+          <p
+            key={ind + 3}
+            className={
+              backgroundChange((bg = !bg), 'md:bg-gray-100') +
+              ' mx-3 border-b-2 border-slate-200/50 justify-between text-gray-900 h-12 flex items-center md:border-none md:text-center  md:justify-center'
+            }
+          >
+            <span className="">{el.replace('?', '')}</span>
+          </p>
+        ) : (
+          <p key={ind + 3} className="mx-3 h-12 flex"></p>
+        ),
+      )}
 
       <div className=" p-6 text-center rounded-bl-lg">
         <h2 className="text-4xl text-gray-900 font-medium leading-none mb-6 mt-2">

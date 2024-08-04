@@ -8,11 +8,11 @@ export function SmmOfferPage() {
   return (
     <div className="  flex flex-col text-sm  md:bg-white/70 md:rounded-xl md:p-6 md:ml-0 md:gap-6 ">
       <ReturnButton />
-      <div className=" flex flex-col md:justify-center md:flex md:flex-row md:max-w-fit ">
+      <div className=" flex flex-col p-5 md:justify-center md:flex md:flex-row md:max-w-fit ">
         <div className=" mt-48 hidden md:block">
           <ComparisonFeatures />
         </div>
-        <div className=" flex flex-col border-2 items-center  md:flex md:flex-row rounded-lg  lg:border-2">
+        <div className=" flex flex-col items-center  md:flex md:flex-row rounded-lg  lg:border-2">
           <ComparisonCardComponent
             title={'Базовый'}
             price={15000}

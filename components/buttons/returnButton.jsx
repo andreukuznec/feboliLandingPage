@@ -10,7 +10,7 @@ export function ReturnButton() {
   return (
     <button
       onClick={handleBack}
-      className=" absolute mb-4 px-4 py-2 text-indigo-600 rounded hover:text-indigo-700 hover:-translate-y-0.5"
+      className=" absolute mb-4 px-4 py-2 text-base text-indigo-600 rounded hover:text-indigo-700 hover:-translate-y-0.5"
     >
       &larr;Вернуться
     </button>

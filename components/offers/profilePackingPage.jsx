@@ -1,12 +1,13 @@
 import { ReturnButton } from '../buttons/returnButton';
-import { reels, terms, title } from '../consts/reelsPage';
+import { cases, terms, title } from '../consts/packingPage';
+
 import { BasicOffer } from './components/basicOffer';
 
-export function ReelsPage() {
+export function ProfilePackingPage() {
   return (
     <div className=" max-w-screen-xl md:p-6 md:ml-0 md:gap-6 ">
       <ReturnButton />
-      <BasicOffer title={title} terms={terms} cases={reels} slider={true} />
+      <BasicOffer title={title} cases={cases} terms={terms} />
     </div>
   );
 }
